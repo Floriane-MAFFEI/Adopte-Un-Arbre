@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Specie index{% endblock %}
+
+{% block body %}
+    <h1>Specie index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Scientific_name</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for specie in species %}
+            <tr>
+                <td>{{ specie.id }}</td>
+                <td>{{ specie.name }}</td>
+                <td>{{ specie.scientificName }}</td>
+                <td>{{ specie.description }}</td>
+                <td>
+                    <a href="{{ path('app_back_specie_show', {'id': specie.id}) }}">show</a>
+                    <a href="{{ path('app_back_specie_edit', {'id': specie.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_back_specie_new') }}">Create new</a>
+{% endblock %}

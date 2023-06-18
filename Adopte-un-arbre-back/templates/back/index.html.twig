@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+    <h1 class="ms-5 mt-3 ">Backoffice</h1>
+
+    <a class="btn btn-lg btn-outline-primary ms-5 mt-4" href="{{ path('app_back_project_index') }}">Les Projets</a>
+
+    <a class="btn btn-lg btn-outline-success ms-5 mt-4" href="{{ path('app_tree_index') }}">Les arbres</a>
+
+    <a class="btn btn-lg btn-outline-warning ms-5 mt-4" href="{{ path('app_back_organism_index') }}">Les organismes</a>
+
+    <a class="btn btn-lg btn-outline-info ms-5 mt-4" href="{{ path('app_back_user_index') }}">Les Utilisateurs</a>
+
+    <a class="btn btn-lg btn-outline-secondary ms-5 mt-4" href="{{ path('app_back_specie_index') }}">Les espèces</a>
+
+    <a class="btn btn-lg btn-outline-danger ms-5 mt-4" href="{{ path('app_security_logout') }}">Deconnexion</a>
+
+{% endblock %}

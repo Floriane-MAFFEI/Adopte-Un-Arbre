@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tree index{% endblock %}
+
+{% block body %}
+    <h1>Tree index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Status</th>
+                <th>Origin</th>
+                <th>Price</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for tree in trees %}
+            <tr>
+                <td>{{ tree.id }}</td>
+                <td>{{ tree.status ? 'Yes' : 'No' }}</td>
+                <td>{{ tree.origin }}</td>
+                <td>{{ tree.price }}</td>
+                <td>
+                    <a href="{{ path('app_tree_show', {'id': tree.id}) }}">show</a>
+                    <a href="{{ path('app_tree_edit', {'id': tree.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_tree_new') }}">Create new</a>
+{% endblock %}

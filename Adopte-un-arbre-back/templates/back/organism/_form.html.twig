@@ -1,0 +1,35 @@
+{{ form_start(form) }}
+<div class="container mt-3">
+    {{ form_start(form) }}
+    <div class="mb-3">
+        <label for="form_name" class="form-label">Nom de l'organisme</label>
+        {{ form_widget(form.name, {'attr': {'class': 'form-control', 'id': 'form_name'}}) }}
+    </div>
+    <div class="mb-3">
+        <label for="form_description" class="form-label">Description de l'organisme</label>
+        {{ form_widget(form.description, {'attr': {'class': 'form-control', 'id': 'form_description'}}) }}
+    </div>
+    <div class="mb-3">
+        <label for="form_Siret_insee" class="form-label">Numéro de Siret/Insee</label>
+        {{ form_widget(form.siret_insee, {'attr': {'class': 'form-control', 'id': 'form_siret_insee'}}) }}
+    </div>
+    <div class="mb-3">
+        <label for="form_adress" class="form-label">Nom de la rue</label>
+        {{ form_widget(form.adress, {'attr': {'class': 'form-control', 'id': 'form_adress'}}) }}
+    </div>
+    <div class="mb-3">
+        <label for="form_Zip_code" class="form-label">Code Postal</label>
+        {{ form_widget(form.zip_code, {'attr': {'class': 'form-control datepicker', 'id': 'form_zip_code'}}) }}
+    </div>
+    <div class="mb-3">
+        <label for="form_city" class="form-label">Ville</label>
+        {{ form_widget(form.city, {'attr': {'class': 'form-control', 'id': 'form_city'}}) }}
+    </div>
+    <div class="mb-3">
+        <label for="form_phone_number" class="form-label">phone_number</label>
+        {{ form_widget(form.phone_number, {'attr': {'class': 'form-control', 'id': 'form_phone_number'}}) }}
+    </div>
+    <button type="edit" class="btn btn-success">Modifier</button>
+    {{ form_end(form) }}
+</div>
+{{ form_end(form) }}

@@ -1,0 +1,10 @@
+lexik_jwt_authentication:
+    secret_key: '%env(resolve:JWT_SECRET_KEY)%' # required for token creation
+    public_key: '%env(resolve:JWT_PUBLIC_KEY)%' # required for token verification
+    pass_phrase: '%env(JWT_PASSPHRASE)%' # required for token creation
+    ## en apothésose si pas envie de se prendre la tête
+    # token_ttl: 6480000 
+    ## dans la vrai vie en DEV
+    # token_ttl: 64800 # 18h, valable une journée 
+    ## dans la vrai vie en PROD
+    token_ttl: 3600 # token TTL in seconds, defaults to 1 hour

@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Organismes{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <h1>Les organismes</h1>
+
+        <a class="btn btn-lg btn-primary ms-5 mt-4" href="{{ path('app_back_organism_new') }}">Crée un nouvel
+            organisme</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Siret_insee</th>
+                <th>Adress</th>
+                <th>Zip_code</th>
+                <th>City</th>
+                <th>Phone_number</th>
+                <th>Description</th>
+                <th>Avatar</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for organism in organisms %}
+            <tr>
+                <td>{{ organism.id }}</td>
+                <td>{{ organism.name }}</td>
+                <td>{{ organism.siretInsee }}</td>
+                <td>{{ organism.adress }}</td>
+                <td>{{ organism.zipCode }}</td>
+                <td>{{ organism.city }}</td>
+                <td>{{ organism.phoneNumber }}</td>
+                <td>{{ organism.description }}</td>
+                <td>{{ organism.avatar }}</td>
+                <td>
+                    <a class="btn btn-lg btn-warning ms-5 mt-4" href="{{ path('app_back_organism_show', {'id':
+                        organism.id}) }}">show</a>
+                    <a class="btn btn-lg btn-success ms-5 mt-4" href="{{ path('app_back_organism_edit', {'id':
+                        organism.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    </div>
+{% endblock %}

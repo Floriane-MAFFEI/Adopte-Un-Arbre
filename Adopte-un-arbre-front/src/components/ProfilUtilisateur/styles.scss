@@ -1,0 +1,144 @@
+@import '../../styles/vars';
+
+main {
+  padding-bottom: 8em;
+}
+
+.profil_profilUtilisateur {
+  display: flex;
+  flex-direction: row;
+  margin: 5em 15em;
+
+}
+
+.cadre_profilUtilisateur {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  margin-right: 7em;
+  margin-top: 3em;
+  border: solid $marronClair;
+}
+
+.avatar_profilUtilisateur {
+  width:100%;
+}
+
+.infos_profilUtilisateur {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h3_profilUtilisateur {
+  text-align: left;
+  padding-left: 0px;
+}
+
+.comptes_profilUtilisateur {
+  display: flex;
+  flex-direction: row;
+}
+
+.p_profilUtilisateur {
+  padding-bottom: 0px;
+  padding-top: 28px;
+  padding-bottom: 5px;
+  padding-left: 1em;
+}
+
+.logo_profilUtilisateur {
+  width: 50px;
+  display: block;
+}
+
+
+.adopter_profilUtilisateur {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15em;
+}
+
+.logoEnvoi_profilUtilisateur {
+  width: 30px;
+  display: block;
+}
+
+.pEnvoi_profilUtilisateur {
+  padding-bottom: 0px;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  padding-left: 1em;
+  font-weight: bold;
+}
+
+.p2_profilUtilisateur {
+  margin-left: 11.5em;
+  margin-top: 0px;
+  margin-bottom: 2.5em;
+  padding-top: 0px;
+  width: 1050px;
+  text-align: left;
+}
+
+.button_profilUtilisateur {
+  font-size: 1.5em;
+  color: black;
+  background-color: #00a651;
+  text-align: center;
+  padding: 0.8em;
+  margin: 10em;
+  cursor : pointer;
+  transition-duration: 0.2s;
+  box-shadow: 3px 3px 12px #444444e1;
+    
+  &:hover {
+    color: white;
+    box-shadow: none;
+    padding: 0.7em;
+    margin: 10.1em;
+    transition-duration: 0.2s;
+  }
+}
+
+.cards_profilUtilisateur {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.container_profilUtilisateur {
+  background-color: $vertClair;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -5px;
+}
+
+.cadres_profilUtilisateur {
+  margin-top: 1em;
+  width: 65%;
+  height: 200px;
+  overflow: hidden;
+  margin-left: 17%;
+  justify-content: center;
+  display: flex;
+  background-color: $marronClair;
+  border: solid $marronClair;
+}
+
+.desc_profilUtilisateur {
+  height:100px;
+  overflow: scroll;
+}
+
+.treeDescription_profilUtilisateur {
+  font-size: medium;
+}

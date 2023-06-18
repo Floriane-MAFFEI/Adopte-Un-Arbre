@@ -1,0 +1,45 @@
+.connexion {
+  display: flex;
+  height:52vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Quicksand;
+  font-size: 1.5em;
+}
+
+.h1_connexion {
+  color: black;
+  font-size: 35px;
+  margin-bottom: 0px;
+  font-family: quicksand;
+}
+
+.connexion_form {
+  width: 400px;
+}
+
+.connexion_button {
+  padding: 0.5em;
+  border: none;
+  font-family: quicksand;
+  font-size: 1.5em;
+  color: #141414;
+  background-color: #00a651;
+  box-shadow: 3px 3px 12px #444444e1;
+  transition-duration: 0.2s;
+  margin: 0.5em;
+
+  &:hover {
+    padding: 0.4em;
+    margin: 0.6em;
+    color: white;
+    box-shadow: none;
+    transition-duration: 0.2s;
+    cursor : pointer;
+
+  }
+}
+
+input {
+  height: 3em;
+}

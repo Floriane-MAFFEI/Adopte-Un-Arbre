@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  border-top: 1px solid #00a651;
+  position: static;
+}
+
+.text_footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: quicksand;
+}
+
+.GreenTeam {
+  font-size: 1.5em;
+  color: black;
+  background-color: #00a651;
+  text-align: center;
+  padding: 0.8em;
+  margin: 1em;
+  cursor : pointer;
+  transition-duration: 0.2s;
+  box-shadow: 3px 3px 12px #444444e1;
+  
+  &:hover {
+    color: white;
+    box-shadow: none;
+    padding: 0.7em;
+    margin: 1.1em;
+    transition-duration: 0.2s;
+  }
+}
+
+.copyright {
+  color: black;
+  font-style: italic;
+}
+  

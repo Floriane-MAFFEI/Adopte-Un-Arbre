@@ -1,0 +1,59 @@
+@import '../../../styles/vars';
+
+.h1_projet {
+  color: #000;
+  font-family: quicksand;
+  font-size: 35px;
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.picture-projet {
+  width: 900px;
+}
+
+.first-part-projet {
+  float: left;
+  width: 50%;
+}
+
+.stock_projet {
+  padding: 1%;
+}
+
+.meta_projet {
+  font-family: quicksand;
+  line-height: 2;
+  font-size: 1.5em;
+}
+
+.meta_projet_p {
+  font-family: quicksand;
+  line-height: 2;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.button-container-projet {
+  display: flex;
+  justify-content: center;
+}
+
+.button-adopter-projet {
+  background-color: $couleurPrincipale;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 15px;
+  cursor: pointer;
+  
+  &:hover {
+    color: white;
+  }
+}

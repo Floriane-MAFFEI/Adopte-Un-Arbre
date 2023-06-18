@@ -1,0 +1,181 @@
+@import '../../styles/vars';
+
+.main_profilOrganisme {
+  font-family: quicksand;
+}
+.profil_profilOrganisme {
+  display: flex;
+  flex-direction: row;
+  margin: 5em 15em;
+  margin-bottom: 2em;
+
+}
+
+.cadre_profilOrganisme {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-right: 7em;
+  margin-top: 3em;
+  border: solid $marronClair;
+}
+
+.avatar_profilOrganisme {
+  width:100%;
+}
+
+.infos_profilOrganisme {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h3_profilOrganisme {
+  text-align: left;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.description_profilOrganisme {
+  width: 700px;
+  text-align: left;
+  overflow: scroll;
+  height: 230px;
+}
+
+.donnees_profilOrganisme {
+  margin-left: 15em;
+  margin-bottom: 4em;
+}
+
+.comptes_profilOrganisme {
+  display: flex;
+  flex-direction: row;
+}
+
+.p_profilOrganisme {
+  padding-bottom: 0px;
+  padding-top: 28px;
+  padding-bottom: 5px;
+  padding-left: 1em;
+}
+
+.logo_profilOrganisme {
+  width: 50px;
+  display: block;
+}
+
+.button_profilOrganisme {
+  font-size: 1.5em;
+  color: black;
+  background-color: #00a651;
+  text-align: center;
+  padding: 0.8em;
+  margin: 10em;
+  cursor : pointer;
+  transition-duration: 0.2s;
+  box-shadow: 3px 3px 12px #444444e1;
+    
+  &:hover {
+    color: white;
+    box-shadow: none;
+    padding: 0.7em;
+    margin: 10.1em;
+    transition-duration: 0.2s;
+  }
+}
+
+.news_profilOrganisme {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15em;
+  margin-top: 8em;
+}
+
+.logoEnvoi_profilOrganisme {
+  width: 30px;
+  display: block;
+}
+
+.pEnvoi_profilOrganisme {
+  padding-bottom: 0px;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  padding-left: 1em;
+  font-weight: bold;
+}
+
+.pPhotos_profilOrganisme {
+  margin-left: 12.5em;
+  width: 1050px;
+  text-align: left;
+}
+
+.photos_profilOrganisme {
+  margin-left: 15em;
+  margin-right: 10em;
+  margin-bottom: 10em;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+.photo_profilOrganisme {
+  background-color: $vertClair;
+  width: 230px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px -5px;
+}
+
+.cadres_profilOrganisme {
+  margin-top: 1em;
+  width: 80%;
+  height: 150px;
+  overflow: hidden;
+  margin-left: 10%;
+  display: flex;
+  background-color: $marronClair;
+  border: solid $marronClair;
+}
+
+.image_profilOrganisme {
+  width: 100%
+}
+
+.fileInput_profilOrganisme {
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+.select_profilOrganisme {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 0px;
+}
+
+.fileButton_profilOrganisme {
+  margin-left: 10%;
+  font-weight: bold;
+  padding: 4px;
+  color: white;
+  background-color: $marronClair;
+  border: none;
+  box-shadow: 0px 0px 10px -3px black;
+
+  &:hover {
+    box-shadow: none;
+    padding: 3px;
+  }
+}

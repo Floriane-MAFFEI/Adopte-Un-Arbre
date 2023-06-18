@@ -1,0 +1,33 @@
+@import '../../styles/vars';
+
+
+.content-participer {
+  text-align: center;
+  padding: 2%;
+  line-height: 2.5;
+}
+
+.button-plus-participer {
+  background-color: #00a651;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 6%;
+  padding: 10px;
+  
+  &:hover {
+    color: white;
+  }
+}
+
+h2 {
+  color: $couleurPrincipale;
+  text-align: center; 
+}
+
+.picture-participer {
+  width: 200px;
+  height: auto;
+}

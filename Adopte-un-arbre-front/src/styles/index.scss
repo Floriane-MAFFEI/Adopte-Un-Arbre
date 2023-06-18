@@ -1,0 +1,20 @@
+// @use 'reset';
+@use 'vars';
+@import '~fomantic-ui/dist/semantic.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Quicksand:wght@300;400&display=swap');
+
+body {
+  font-family: sans-serif;
+}
+
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

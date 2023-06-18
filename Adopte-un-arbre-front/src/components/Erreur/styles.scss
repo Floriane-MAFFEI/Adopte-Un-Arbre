@@ -1,0 +1,47 @@
+@import '../../styles/vars';
+
+.erreur404 {
+  height: 100vh;
+  background-image: url(../../assets/erreur404.png);
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3%;
+
+  .content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px 4px $marronFonce;
+  }
+
+  p {
+    font-size: 70px;
+    padding: 2%;
+    color: white;
+    text-shadow: 2px 2px 4px $marronFonce;
+  }
+
+  .button {
+    padding: 0.8em;
+    font-family: quicksand;
+    font-size: 1.5em;
+    color: #141414;
+    background-color: $couleurPrincipale;
+    box-shadow: 3px 3px 12px #444444e1;
+    transition-duration: 0.2s;
+
+    &:hover {
+      padding: 0.7em;
+      color: white;
+      box-shadow: none;
+      transition-duration: 0.2s;
+    }
+  }
+}

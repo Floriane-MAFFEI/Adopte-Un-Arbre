@@ -1,0 +1,93 @@
+@import '../../styles/vars';
+
+.projets {
+  text-align: center;
+  padding: 2%;
+
+  h2 {
+    color: $couleurPrincipale;
+  }
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+
+  button {
+    padding: 0.5em;
+    margin: 2%;
+    font-family: quicksand;
+    font-size: 1.5em;
+    background-color: $couleurPrincipale;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em;
+    box-shadow: 3px 3px 12px #444444e1;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.projects-cards {
+  display: flex;
+  margin: 2%;
+  padding: 2%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .card {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    .content {
+      line-height: 40px;
+    }
+    .picture-projects-container{
+      text-align: center;
+    }
+    .picture-projets {
+      width: 200px;
+      height: auto;
+    }
+
+    .header {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: $marronFonce;
+    }
+   
+    .redirect {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-plus-projets {
+      background-color: $couleurPrincipale;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 6%;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}

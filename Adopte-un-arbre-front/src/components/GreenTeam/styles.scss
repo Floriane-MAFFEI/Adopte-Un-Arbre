@@ -1,0 +1,46 @@
+@import '../../styles/vars';
+
+.h2_greenteam {
+  text-align: center;
+  padding: 3%;
+}
+
+h3 {
+  text-align: center;
+  padding: 3%;
+  color: $couleurPrincipale;
+  font-size: 3rem;
+  font-family: quicksand;
+}
+
+p {
+  padding-bottom: 3%;
+}
+
+.présentation {
+  font-size: 29px;
+  font-family: quicksand;
+  line-height: 2.5;
+  margin: 33px;
+  text-align: center;
+}
+
+.cards_greenteam_back {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.cards_greenteam_front {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding-top: 2%;
+  padding-right: 14%;
+  padding-left: 14%;
+}
